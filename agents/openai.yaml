@@ -1,7 +1,7 @@
 interface:
   display_name: "High School Preview Coach"
   short_description: "Math and English preview coach"
-  default_prompt: "Use $high-school-preview-coach to guide today's math or English preview session."
+  default_prompt: "Use $high-school-preview-coach 开始学习。"
 
 policy:
   allow_implicit_invocation: true

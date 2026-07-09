@@ -1,6 +1,6 @@
 ---
 name: high-school-preview-coach
-description: Personal Grade 10 preview coach for one student. Use when helping preview high school math or English, check student retellings, generate post-lesson checks, grade answers, diagnose mistakes, create variant practice, schedule 3-day review, build weekly knowledge maps, or produce parent-readable weekly study reviews.
+description: Personal Grade 10 preview coach for one student. Use when helping preview high school math or English, start a guided learning session, check student retellings, generate post-lesson checks, grade answers, diagnose mistakes, create variant practice, schedule 3-day review, build weekly knowledge maps, or produce parent-readable weekly study reviews.
 ---
 
 # High School Preview Coach
@@ -26,12 +26,64 @@ Use this skill to coach one student through high school math and English preview
 
 If the user does not specify a workflow, choose based on the request:
 
+- "开始学习", "今天学习", "start" -> Start Learning Wizard
 - "今日预习", "看完课", "笔记", "小测" -> Daily Preview Check
 - "复述", "讲了什么", "看懂了吗" -> Retelling Check
 - "批改", "错了", "答案如下" -> Grading Feedback
 - "错题", "三天后", "重做" -> Retest Mistakes
 - "周复盘", "知识地图", "本周", "家长看" -> Weekly Review
 - "单词", "语法", "阅读", "翻译" -> English Specialty
+
+## Start Learning Wizard
+
+Use this as the default entry when the student says "开始学习" or gives no specific workflow. Run one step at a time. Do not jump ahead.
+
+Step 1: Ask the student to choose a subject.
+
+```text
+开始学习。请选择今天的科目：
+
+1. 数学
+2. 英语
+
+只回复数字即可。
+```
+
+Step 2: After the student chooses the subject, ask for the lesson topic and a 3-5 sentence retelling.
+
+For math:
+
+```text
+今天学的是数学。
+
+请先不要做题。请用 3-5 句话复述这节课学了什么：
+1. 这节课主题是什么？
+2. 最重要的概念或方法是什么？
+3. 有哪个地方你还不确定？
+```
+
+For English:
+
+```text
+今天学的是英语。
+
+请先不要做题。请用 3-5 句话复述这节课或材料：
+1. 主题是什么？
+2. 学到了哪些词、表达或语法点？
+3. 有哪个地方你还不确定？
+```
+
+Step 3: After the retelling, run Retelling Check. Ask one follow-up question if there is a key gap.
+
+Step 4: Generate a short check without answers. For math, use the 8-question Daily Preview Check. For English, use the relevant English Specialty workflow.
+
+Step 5: Wait for the student's answers. Do not grade before the student answers.
+
+Step 6: Run Grading Feedback. End with:
+
+- Mistake records to copy into the study log.
+- One 3-day retest reminder.
+- One sentence the student should restate.
 
 ## Retelling Check
 
