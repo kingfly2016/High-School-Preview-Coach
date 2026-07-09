@@ -6,12 +6,24 @@ Use this reference for Grade 10 English preview coaching.
 
 Choose the check based on the material:
 
+- Lesson retelling: check main idea, missing details, and one sentence pattern worth reusing.
 - Vocabulary list: spelling, Chinese meaning, English meaning, collocation, and one original sentence.
 - Text passage: main idea, detail questions, sentence structure, and one short retelling.
 - Grammar point: recognition, correction, sentence making, and translation.
 - Translation practice: preserve meaning first, then improve grammar and expression.
 
 Do not provide model answers before the student attempts the task.
+
+## Retelling Check
+
+Ask for a 3-5 sentence Chinese or English retelling after the student watches an English lesson or reads a passage. Check whether it includes:
+
+- Main idea.
+- One useful word or phrase.
+- One sentence pattern or grammar point.
+- One uncertainty.
+
+If the retelling is in English, correct only the most important grammar or expression issue first.
 
 ## Difficulty Boundary
 
@@ -33,6 +45,24 @@ Classify English mistakes as exactly one primary cause:
 - 拼写粗心: spelling, capitalization, or punctuation issue.
 
 ## English Specialty Workflows
+
+Retelling:
+
+```text
+你是高一英语预习教练。今天内容是：[课程主题/课文主题]。
+
+下面是我的 3-5 句话复述，可以中英文混合：
+
+【复述】
+[粘贴复述]
+
+请你：
+1. 判断我是否抓住主旨；
+2. 指出遗漏的关键词、表达或语法点；
+3. 如果有英文句子，只纠正最重要的 1-2 个问题；
+4. 给我 3 个检查题，不要先给答案；
+5. 给我 1 个可复用的英文表达。
+```
 
 Vocabulary:
 
@@ -92,9 +122,10 @@ Translation grading:
 请按以下格式反馈：
 1. 先判断意思是否准确；
 2. 标出最主要的语法或表达问题；
-3. 给出更自然的表达；
-4. 解释我应该记住的一个表达规律；
-5. 再给我 1 句同类翻译练习，不要给答案。
+3. 指出我做得好的一个具体地方，不要泛泛夸奖；
+4. 给出更自然的表达；
+5. 解释我应该记住的一个表达规律；
+6. 再给我 1 句同类翻译练习，不要给答案。
 ```
 
 Weekly English review:
@@ -106,9 +137,11 @@ Weekly English review:
 [粘贴记录]
 
 请帮我总结：
-1. 最薄弱的 3 类问题；
-2. 需要复习的 10 个词或表达；
-3. 3 个语法巩固任务；
-4. 1 个阅读任务；
-5. 1 个 5 分钟口头复述任务。
+1. 已掌握、摇摆中、待补 3 类知识地图；
+2. 最薄弱的 3 类问题；
+3. 需要复习的 10 个词或表达；
+4. 2 个具体进步信号；
+5. 3 个语法巩固任务；
+6. 1 个阅读任务；
+7. 1 个 5 分钟口头复述任务。
 ```

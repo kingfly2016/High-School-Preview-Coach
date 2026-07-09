@@ -4,7 +4,7 @@ Use this reference for Grade 10 math preview coaching.
 
 ## Daily Check Recipe
 
-Given lesson notes, generate 8 questions:
+Given a student retelling or lesson notes, first check whether the core concept is present. Then generate 8 questions:
 
 - 2 concept judgment questions.
 - 3 basic calculation or direct-application questions.
@@ -12,6 +12,17 @@ Given lesson notes, generate 8 questions:
 - 1 common-mistake question.
 
 Do not include answers until the student responds.
+
+## Retelling Check
+
+Ask for a 3-5 sentence retelling after the student watches a math video. Check whether the retelling includes:
+
+- The lesson's main concept or definition.
+- One condition or direction that is easy to confuse.
+- One example, formula, or method.
+- One uncertainty or question.
+
+For math, give one precise follow-up question before giving a longer explanation.
 
 ## Difficulty Boundary
 
@@ -37,6 +48,24 @@ Classify math mistakes as exactly one primary cause:
 - 题型不熟: understands pieces but cannot recognize the problem pattern.
 
 ## Prompt Templates
+
+Retelling check:
+
+```text
+你是高一数学预习教练。今天课程是：[课程主题]。
+
+下面是我的 3-5 句话复述：
+
+【复述】
+[粘贴复述]
+
+请你：
+1. 判断我是否抓住核心概念；
+2. 指出遗漏或不准确的地方；
+3. 先问我 1 个追问，不要直接长篇讲解；
+4. 根据薄弱点生成 8 道检查题；
+5. 题目先不要给答案。
+```
 
 Daily preview:
 
@@ -70,9 +99,10 @@ Grading:
 请按这个格式反馈：
 1. 每题对错；
 2. 错题的错因分类：概念不清、计算错误、条件遗漏、题型不熟；
-3. 正确思路，不要直接堆完整答案；
-4. 给每道错题再出 1 道同类变式题；
-5. 最后让我用一句话复述今天最重要的知识点。
+3. 指出我做得好的一个具体地方，不要泛泛夸奖；
+4. 正确思路，不要直接堆完整答案；
+5. 给每道错题再出 1 道同类变式题；
+6. 最后让我用一句话复述今天最重要的知识点。
 ```
 
 Low score remediation:
@@ -92,4 +122,21 @@ Low score remediation:
 
 【错题】
 [粘贴错题]
+```
+
+Weekly knowledge map:
+
+```text
+下面是我这一周的高一数学预习记录和错题记录。
+
+【记录】
+[粘贴记录]
+
+请帮我生成本周数学知识地图：
+1. 已掌握：列出能稳定做对的知识点；
+2. 摇摆中：列出偶尔会错、需要巩固的知识点；
+3. 待补：列出概念还不清楚的知识点；
+4. 进步信号：指出 2 个具体进步；
+5. 下周重点：给出 3 个优先复习任务；
+6. 生成一份 30 分钟周测，先不要给答案。
 ```
