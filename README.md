@@ -37,7 +37,7 @@ git pull
 数学预习检查：
 
 ```text
-Use $high-school-preview-coach 帮我儿子做今天的高一数学集合预习检查。
+Use $high-school-preview-coach 帮学生做今天的高一数学集合预习检查。
 下面是他的听课笔记：
 ...
 ```
@@ -53,7 +53,7 @@ Use $high-school-preview-coach 批改这份高一数学小测，并按错因给�
 英语专项：
 
 ```text
-Use $high-school-preview-coach 帮我儿子预习这组高一英语单词，先生成检查题，不要直接给答案。
+Use $high-school-preview-coach 帮学生预习这组高一英语单词，先生成检查题，不要直接给答案。
 单词表如下：
 ...
 ```
